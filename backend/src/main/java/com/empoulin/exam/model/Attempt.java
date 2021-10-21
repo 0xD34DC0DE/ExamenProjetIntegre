@@ -15,15 +15,15 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Entity
 @Builder
-public class Dummy {
+public class Attempt {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long id;
+    Long id;
 
     String name;
 
-    String description;
+    Integer guess;
 
-    Integer count;
+    Integer randomNumber;
 }
